@@ -1,3 +1,5 @@
+# Replace X 
+
 t = int(input())
 for _ in range(t):
     n, x, p, k = map(int, input().split())

@@ -42,4 +42,5 @@ while True:
     if j >= len(b):
         break
 
+print("\nThe merged array is:")
 print(*a)

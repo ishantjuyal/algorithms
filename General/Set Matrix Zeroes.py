@@ -35,6 +35,6 @@ for i in range(m):
 for i in zero_row:
     a[i] = [0]*n
 
-print("Matrix after transformation:")
+print("\nMatrix after transformation:")
 for i in a:
     print(*i)

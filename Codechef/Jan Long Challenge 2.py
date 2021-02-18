@@ -5,7 +5,7 @@ def encode(character):
     a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p']
     code = ''
     l = 16
-    for i in range(4):
+    for _ in range(4):
         if character in a[:l//2]:
             code += '0'
             a = a[:l//2]

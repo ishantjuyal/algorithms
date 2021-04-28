@@ -18,10 +18,11 @@ class LinkedList:
     
     # Iterative approach
     def get_length(self):
-        count = 0
+        count = 0 # Initiate a count
+
         temp = self.head
-        while temp:
-            count += 1
+        while temp: # Traverse through the Linked List
+            count += 1 # Change the count to know how many nodes have been counted
             temp = temp.next
         return(count)
     

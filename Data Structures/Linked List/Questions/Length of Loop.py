@@ -1,5 +1,5 @@
 """
-Write a function that counts the number of times a given int occurs in a Linked List
+Find length of loop in linked list
 """
 
 class Node:
@@ -16,27 +16,25 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
     
-    def printList(self):
-        temp = self.head
-        while temp:
-            print(temp.data, end = "-> ")
-            temp = temp.next
-        print("NULL")
-    
-    def detect(self):
+    def loop_length(self):
         node_list = []
         temp = self.head
         loop = False
+        index = 0
         while temp:
             if temp not in node_list:
                 node_list.append(temp)
             else:
+                new_index = node_list.index(temp)
                 loop = True
                 break
             temp = temp.next
-        return(loop)
-
-
+            index += 1
+        
+        if loop == True:
+            return(index - new_index)
+        else:
+            return(0)
 
 
 if __name__ == '__main__':
@@ -50,7 +48,5 @@ if __name__ == '__main__':
     # Create a loop for testing
     llist.head.next.next.next.next = llist.head
     
-    if(llist.detect()):
-        print("Loop found")
-    else:
-        print("No Loop ")
+
+    print("Length of loop in the Linked List:", llist.loop_length())

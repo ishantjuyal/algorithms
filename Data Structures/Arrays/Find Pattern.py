@@ -1,9 +1,9 @@
 """
 we have a python list
-A=[3,4,5,6,1,1,3,4,5,6,4,4,3,4,5,6]
+A = [3,4,5,6,1,1,3,4,5,6,4,4,3,4,5,6]
 So I want to count the total number of times, the sequence 3,4,5,6 appears in this?
 """
-a = [3,4,5,6,1,1,3,4,5,6,4,4,3,4,5,6]
+a = [3,4,5,6,1,1,3,4,5,6,4,3,4,5,6,4,3,4,5,6]
 
 n = len(a)
 i = 0
